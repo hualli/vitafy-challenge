@@ -9,13 +9,14 @@ Está realizado en Laravel 11 y PHP 8.3, incluye migraciones, factories, rutas A
 
 ### Tests
 Los tests están escritos de tal manera que pueda verificarse si el desarrollo de la aplicación está completo y no hay ninguna falla en el camino.
+Para que el desafío se considere exitoso, se deben pasar todos los tests de manera satisfactoria.
 
 ### Desarrollo
 - Crear un LeadController encargado de realizar las operaciones CRUD necesarias.
 - Un cliente debe crearse luego de crear un lead.
 - Obtener el score luego de crear o actualizar un lead.
 - Crear un trait HasUuid para que cada modelo se cree con un UUID por defecto, como se puede ver en las migraciones.
-- Crear un servicio LeadScoringService con un método getLeadScore.
+- Crear un servicio LeadScoringService con un método getLeadScore, este servicio debe ser programado de tal manera que se pueda intercambiar su implementación de manera transparente para todo el sistema.
 
 ## Plazos
 48 horas desde la recepción del desafío.

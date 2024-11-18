@@ -22,7 +22,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->app->bind(LeadScoringServiceInterface::class, config('iahorro.lead_scoring_service_class'));
         JsonResource::withoutWrapping();
     }
 }
